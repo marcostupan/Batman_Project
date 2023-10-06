@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        html {
+            box-sizing: border-box;
+            font-size: 62.5%; 
+        }
+        .container {
+            width: 60%;
+            margin: 2rem auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 5vw);
+            grid-gap: 1.5rem;
+        }
+        .gallery__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block; 
+        }
+        
+        .gallery__item--1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .gallery__item--2 { 
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        
+        .gallery__item--3 {
+            grid-column-start: 5;
+            grid-column-end: 9;
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+        .gallery__item--4 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 6;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./Batman-logo-black-and-white-picture_2560x1600.jpg" />
+        <nav>
+            <ul>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li>Comentários</li>   
+                </a>
+            </ul>
+        </nav>
+    </header>    
+    <div class="container">
+        <div class="gallery">
+            <figure class="gallery__item gallery__item--1">
+                <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/01/batman-robert-pattinson-2022.jpg?w=1200&h=675&crop=1" alt="Gallery image 1"class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+                <img src="https://cinemacao.com/wp-content/uploads/2022/03/batman-2-1130x590.jpg" alt="Gallery image 2"class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+                <img src="https://img.olhardigital.com.br/wp-content/uploads/2022/02/the-batman-robert-pattinson.jpeg" alt="Gallery image 3"class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--4">
+                <img src="https://sm.ign.com/ign_br/news/t/the-batman/the-batman-sequel-announced-with-robert-pattinson-at-cinemac_ffx9.jpg" alt="Gallery image 4"class="gallery__img">
+            </figure>
+        </div>
+    </div>
+
+    <footer>
+        <img style="object-fit: contain;" id="logo" src="./Batman-logo-black-and-white-picture_2560x1600.jpg" />
+        <span>Todos os direitos reservados ©</span>
+        <span>Desenvolvido por: Marcos Ribeiro</span>
+
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li>Comentários</li>   
+                </a>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
